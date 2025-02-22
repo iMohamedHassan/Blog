@@ -1,0 +1,155 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.posts-container {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #333;
+}
+
+.text-muted {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.Article-creator {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.Article-creator:hover {
+  color: #ff4757;
+  text-decoration: underline;
+}
+
+.author-img{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.article-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.article-text {
+  flex: 3;
+  font-size: 1.1rem;
+}
+
+.sidebar {
+  flex: 1;
+  background: #f1f3f5;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #ff4757;
+}
+
+.sidebar h4 {
+  font-size: 1.4rem;
+  color: #ff4757;
+  margin-bottom: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #ff4757;
+  text-decoration: underline;
+}
+
+.blog-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #f1f3f5;
+  margin-top: 2rem;
+  border-top: 2px solid #ff4757;
+}
+
+.blog-footer a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.blog-footer a:hover {
+  color: #ff4757;
+}
+
+article h2,
+h3 {
+  color: #ff4757;
+  margin-top: 1.5rem;
+}
+
+article p {
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .article-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .blog-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .blog-title {
+    font-size: 2rem;
+  }
+}
